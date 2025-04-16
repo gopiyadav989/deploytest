@@ -1,0 +1,56 @@
+Prompt 1:
+What is ClickHouse used for?
+
+Prompt 2:
+How to ingest data from flat file to ClickHouse using Node.js?
+
+Prompt 3:
+How to implement JWT authentication when connecting to ClickHouse?
+
+Prompt 4:
+How to infer schema from a CSV file using Node.js?
+
+Prompt 5:
+Why is ClickHouse insert from CSV failing with syntax error?
+
+Prompt 6:
+Code snippet I’m using to insert data:
+client.insert({
+  table: 'users',
+  values: parsedRows,
+  format: 'CSV'
+})
+
+Prompt 7:
+How do I implement batch insertion in ClickHouse using clickhouse-js?
+
+Prompt 8:
+How to join multiple ClickHouse tables in a SQL query?
+
+Prompt 9:
+UI issue: preview shows error briefly even when data loaded. How to fix?
+
+Prompt 10:
+React snippet I’m using for preview:
+useEffect(() => {
+  if (!previewData) {
+    loadPreviewData();
+  }
+}, [previewData]);
+
+Prompt 11:
+How do I make sure table headers in CSV output match selected columns?
+
+Prompt 12:
+Why is the CSV export misaligned? First column shows space but others don't.
+
+Prompt 13:
+Fix spacing/alignment issue in exported CSV:
+frgth.id	frgth.name	frgth.age	frgth.city
+1	Alice	30	New York
+
+Prompt 14:
+How to remove extra spaces when writing CSV with fs.writeFile in Node.js?
+
+Prompt 15:
+Final complete implementation – can you review if all requirements are covered?
