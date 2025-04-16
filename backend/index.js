@@ -29,14 +29,16 @@ if (!fs.existsSync('uploads')) {
 app.use('/api/clickhouse', clickhouseRoutes);
 app.use('/api/flatfile', flatFileRoutes);
 
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'OK', message: 'Server is running' });
+});
+
 app.use(express.static(path.join(__dirname, '/frontend/dist')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
 });
 
-app.get('/api/health', (req, res) => {
-    res.status(200).json({ status: 'OK', message: 'Server is running' });
-});
+
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
