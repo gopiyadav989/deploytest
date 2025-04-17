@@ -74,7 +74,7 @@ const IngestionResults = ({ results }) => {
       {results.success && results.target === 'flatfile' && results.filePath && (
         <div className="mt-4 text-center">
           <a 
-            href={`http://localhost:5001/${results.filePath}`}
+            href={`https://clickbridge.onrender.com//${results.filePath}`}
             download
             className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none"
           >
